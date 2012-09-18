@@ -1,0 +1,46 @@
+body{
+	background-color:black;
+	overflow-y:hidden;
+}
+
+#error_notification{
+	position:relative;
+	width:1050px;
+	margin: 0px auto;
+	top:200px;
+	font-size:100px;
+}
+
+#content{ 
+	width:1200px; 
+	height:750px;
+	margin:20px auto;
+}
+
+#lines, #gravitation{
+	position:relative;
+	margin:auto;
+	border: 2px solid black;
+}
+#description{
+	position:relative;
+	width:1200px;
+	top:0px;
+	left:20px;
+	font-size:50px;
+	color:gray;
+	opacity:.6;
+	z-index;10;
+	margin:0px;
+}
+#contact{
+	left:20px;
+	font-size:80px;
+	padding-left:80px;
+}
+
+#qr{
+	width:100px;
+	height:100px;
+	padding-left:30px;
+}
