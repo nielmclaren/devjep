@@ -1,4 +1,4 @@
-var socket = io.connect('http://108.166.124.108');
+var socket = io.connect('http://192.168.1.100');
 mouseIsPressed = false;
 createAttractor = false;
 removeAttractor = false;
