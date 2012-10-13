@@ -1,1 +1,2 @@
-This is the first version of a mobile, real-time touch interaction application.  It uses Node.js and Socket.io to give users real-time control over digital objects using their cell phones. 
+Host and player controllers for Mack Flavelle's Developer Jeopardy meetup.
+http://www.meetup.com/Vancouver-Tech-Co-Founders/events/86554782

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="/css/common.css"/>
+	<link rel="stylesheet" href="/css/player.css"/>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="/js/player.js"></script>
+</head>
+
+<body>
+    <div id="joinScreen" class="screen">
+        <form id="joinForm">
+            <label for="fullname">Full name</label>
+            <input type="text" id="fullnameInput" value="" />
+            <input type="button" id="joinButton" value="Join!" />
+        </form>
+    </div>
+    <div id="joiningScreen" class="screen">
+        <p>Joining...</p>
+    </div>
+    <div id="joinedScreen" class="screen">
+        <p>Joined the game as <span class="player"></span>.</p>
+    </div>
+    <div id="clueScreen" class="screen">
+        <p>Trebek is reading out the clue. You will be able to respond momentarily.</p>
+    </div>
+    <div id="responseScreen" class="screen">
+        <p>Hit the button if you know the response!</p>
+        <input type="button" class="next" value="Respond" />
+    </div>
+    <div id="respondedScreen" class="screen">
+        <p>You clicked respond. Trebek will let you know if you were first.</p>
+    </div>
+    <div id="judgementScreen" class="screen">
+        <p>Trebek is judging the response.</p>
+    </div>
+</body>
+
+</html>

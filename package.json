@@ -1,5 +1,5 @@
 {
-  "name": "YOUR-APP-NAME",
+  "name": "devjep",
   "version": "0.0.1",
   "dependencies": {
     "express": "2.5.6",
