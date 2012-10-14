@@ -1,4 +1,3 @@
-var socket = io.connect('http://192.168.1.100');
 var playerData;
 
 $(document).ready(function(){

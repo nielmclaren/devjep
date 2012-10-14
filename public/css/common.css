@@ -1,3 +1,43 @@
+@font-face {
+    font-family: Korina;
+    font-weight: bold;
+    src: url('korinab.ttf');
+    src: local('Korina'), url('korinab.ttf') format('truetype');
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+}
+
+.page {
+    background: black;
+}
+
 .screen {
     display: none;
+
+    background-color: #002e74;
+    background-image: -moz-radial-gradient(50% 50%, ellipse cover, #57a0fe, #002e74 100%);
+    background-image: -webkit-radial-gradient(50% 50%, ellipse cover, #57a0fe, #002e74 100%);
+    background-image: -o-radial-gradient(50% 50%, ellipse cover, #57a0fe, #002e74 100%);
+    background-image: -ms-radial-gradient(50% 50%, ellipse cover, #57a0fe, #002e74 100%);
+    background-image: radial-gradient(50% 50%, ellipse cover, #57a0fe, #002e74 100%);
+
+    border: 1px solid black;
+    border-radius: 15px;
+    margin: 10px;
+    padding: 100px 10px 10px 10px;
+    text-align: center;
+
+    color: white;
+    font-family: Korina, Impact, serif;
+    font-size: 32px;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #333;
+    
+    vertical-align: middle;
 }
+
