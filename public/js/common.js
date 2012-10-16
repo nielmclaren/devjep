@@ -1,4 +1,4 @@
-var socket = io.connect('http://192.168.1.100');
+var socket = io.connect('http://devjep.jit.su');
 
 $(document).ready(function() {
     size();
