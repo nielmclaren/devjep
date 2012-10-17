@@ -4,7 +4,7 @@ Developer Jeopardy
 Host and player controllers for Mack Flavelle's Developer Jeopardy meetup.
 http://www.meetup.com/Vancouver-Tech-Co-Founders/events/86554782
 
-![Developer Jeopardy](master/devjep.jpg "Developer Jeopardy")
+![Developer Jeopardy](https://raw.github.com/danielgm/devjep/master/devjep.jpg "Developer Jeopardy")
 
 Installation
 ------------
