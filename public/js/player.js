@@ -5,10 +5,19 @@ $(document).ready(function(){
         socket.emit('iAm', 'player');
     });
 
-    $('#joinButton').click(function(event) {
+    var join = function() {
         socket.emit('join', {'fullname': $('#fullnameInput').val()});
         $('.screen').hide();
         $('#joiningScreen').show();
+    }
+    $('#joinButton').click(function(event) {
+        join();
+    });
+    $('#fullnameInput').keypress(function(event) {
+        if (event.which == 13) {
+            event.preventDefault();
+            join();
+        }
     });
 
     socket.on('joined', function(player) {
