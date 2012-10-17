@@ -30,4 +30,5 @@ Notes
 - The node modules are already in there so npm install shouldn't be necessary.
 - This is not a secure implementation. Hopefully you're in a situation where you can trust your users not to cheat.
 - Thanks to [Kazuhiko Arase](http://www.d-project.com) for his Javascript QR code library. 
+- Thanks to [Peter Darche](http://itp.nyu.edu/~pmd299/wordpress/) for his [open-RTTI work](https://github.com/pdarche/open-rtti) which was my first time seeing node.js and sockets.io in action and on which this project is based.
 
