@@ -1,9 +1,13 @@
+Developer Jeopardy
+==================
+
 Host and player controllers for Mack Flavelle's Developer Jeopardy meetup.
 http://www.meetup.com/Vancouver-Tech-Co-Founders/events/86554782
 
-![Developer Jeopardy](devjep.jpg "Developer Jeopardy")
+![Developer Jeopardy](master/devjep.jpg "Developer Jeopardy")
 
 Installation
+------------
 
 First, modify app.js and set the URL to your app. Look for this line and update it:
 
@@ -21,7 +25,9 @@ The link for players to join will automagically appear on the screen or you can 
 
 
 Notes
+-----
 
 - The node modules are already in there so npm install shouldn't be necessary.
 - This is not a secure implementation. Hopefully you're in a situation where you can trust your users not to cheat.
 - Thanks to [Kazuhiko Arase](http://www.d-project.com) for his Javascript QR code library. 
+
