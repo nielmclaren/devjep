@@ -1,10 +1,18 @@
 var express = require('express');
 
 var app = express.createServer(express.logger()); 
+var appUrl = 'http://192.168.1.139:3000';
 
 var net = require('net');
 
 app.use(express.static(__dirname + '/public'));
+
+app.get('/js/common.js', function(request, response) {
+    response.writeHead(200, {'Content-Type': 'text/javascript'});
+    response.write("var appUrl = '" + appUrl + "';\n"
+        + "var socket = io.connect(appUrl);\n");
+    response.end();
+});
 
 app.get('/trebek', function(request, response) {
     response.sendfile('public/trebek.html');
