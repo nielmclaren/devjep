@@ -19,31 +19,33 @@
 
 <body>
     <div class="page" data-role="page">
-        <div id="joinScreen" class="screen">
-            <p>Enter your name.</p>
-            <form id="joinForm">
-                <input type="text" id="fullnameInput" value="" />
-                <input type="button" id="joinButton" data-inline="true" value="Join" />
-            </form>
-        </div>
-        <div id="joiningScreen" class="screen">
-            <p>Joining...</p>
-        </div>
-        <div id="joinedScreen" class="screen">
-            <p>Joined the game as <span class="player"></span>.</p>
-        </div>
-        <div id="clueScreen" class="screen">
-            <p>Trebek is reading out the clue. You will be able to respond momentarily.</p>
-        </div>
-        <div id="responseScreen" class="screen">
-            <p>Hit the button to respond!</p>
-            <input type="button" class="next" data-inline="true" value="Respond" />
-        </div>
-        <div id="respondedScreen" class="screen">
-            <p>You clicked respond. Trebek will let you know if you were first.</p>
-        </div>
-        <div id="judgementScreen" class="screen">
-            <p>Trebek is judging the response.</p>
+        <div class="screens">
+            <div id="joinScreen" class="screen">
+                <p>Enter your name.</p>
+                <form id="joinForm">
+                    <input type="text" id="fullnameInput" value="" />
+                    <input type="button" id="joinButton" data-inline="true" value="Join" />
+                </form>
+            </div>
+            <div id="joiningScreen" class="screen">
+                <p>Joining...</p>
+            </div>
+            <div id="joinedScreen" class="screen">
+                <p>Joined the game as <span class="player"></span>.</p>
+            </div>
+            <div id="clueScreen" class="screen">
+                <p>Wait for the clue...</p>
+            </div>
+            <div id="responseScreen" class="screen">
+                <p>Hit the button to respond!</p>
+                <input type="button" class="next" data-inline="true" value="Respond" />
+            </div>
+            <div id="respondedScreen" class="screen">
+                <p>Sending...</p>
+            </div>
+            <div id="judgementScreen" class="screen">
+                <p>Waiting for Trebek.</p>
+            </div>
         </div>
     </div>
 </body>

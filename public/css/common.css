@@ -14,11 +14,11 @@ html, body {
 
 .page {
     background: black;
+    height: 100%;
+    width: 100%;
 }
 
-.screen {
-    display: none;
-
+.screens {
     background-color: #002e74;
     background-image: -moz-radial-gradient(50% 50%, ellipse cover, #57a0fe, #002e74 100%);
     background-image: -webkit-radial-gradient(50% 50%, ellipse cover, #57a0fe, #002e74 100%);
@@ -28,16 +28,20 @@ html, body {
 
     border: 1px solid black;
     border-radius: 15px;
-    margin: 10px;
-    padding: 100px 10px 10px 10px;
-    text-align: center;
+
+    width: 96%;
+    height: 96%;
+    margin: 2%;
+}
+
+.screen {
+    margin: 80px 20px;
 
     color: white;
     font-family: Korina, Impact, serif;
     font-size: 32px;
     font-weight: bold;
+    text-align: center;
     text-shadow: 1px 1px 1px #333;
-    
-    vertical-align: middle;
 }
 

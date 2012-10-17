@@ -45,5 +45,6 @@ $(document).ready(function(){
         socket.emit('clue');
     });
 
+    $('.screen').hide();
     $('#joinScreen').show();
 });

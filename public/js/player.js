@@ -5,12 +5,6 @@ $(document).ready(function(){
         socket.emit('iAm', 'player');
     });
 
-    /// DEBUG: Some default names to speed testing.
-    var names = ['French Stewart', 'Turd Ferguson', 'Sean Connery', 'Pete', 'Jane', 'Harry', '$Texas'];
-    $('#fullnameInput').val(names[Math.floor(Math.random() * names.length)]);
-
-    $('#joinScreen').show();
-
     $('#joinButton').click(function(event) {
         socket.emit('join', {'fullname': $('#fullnameInput').val()});
         $('.screen').hide();
@@ -45,5 +39,8 @@ $(document).ready(function(){
         $('.screen').hide();
         $('#judgementScreen').show();
     });
+
+    $('.screen').hide();
+    $('#joinScreen').show();
 });
 

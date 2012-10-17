@@ -3,7 +3,7 @@
 <head>
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
 	<link rel="stylesheet" href="/css/common.css"/> 
-	<link rel="stylesheet" href="/css/trebek.css"/>
+    <style type="text/css"></style>
 
 	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
@@ -14,24 +14,26 @@
 
 <body>
     <div class="page" data-role="page">
-        <div id="joinScreen" class="screen">
-            <p>Waiting for players...</p>
-            <input type="button" class="nextButton" data-inline="true" data-theme="e" value="Start" />
-        </div>
-        <div id="clueScreen" class="screen">
-            <p>Read out the clue.</p>
-            <input type="button" class="nextButton" data-inline="true" data-theme="e" value="Done" />
-        </div>
-        <div id="responseScreen" class="screen">
-            <p>Waiting for players to respond...</p>
-        </div>
-        <div id="judgementScreen" class="screen">
-            <p>First response from player,</p>
-            <h2 class="player">Player Name</h2>
-            <p>Call their name to hear their response.</p>
+        <div class="screens">
+            <div id="joinScreen" class="screen">
+                <p>Waiting for players...</p>
+                <input type="button" class="nextButton" data-inline="true" data-theme="e" value="Start" />
+            </div>
+            <div id="clueScreen" class="screen">
+                <p>Read out the clue.</p>
+                <input type="button" class="nextButton" data-inline="true" data-theme="e" value="Done" />
+            </div>
+            <div id="responseScreen" class="screen">
+                <p>Waiting for players to respond...</p>
+            </div>
+            <div id="judgementScreen" class="screen">
+                <p>First response from player,</p>
+                <h2 class="player">Player Name</h2>
+                <p>Call their name to hear their response.</p>
 
-            <input type="button" class="prevButton" data-inline="true" value="Incorrect" />
-            <input type="button" class="nextButton" data-inline="true" data-theme="e" value="Correct" />
+                <input type="button" class="prevButton" data-inline="true" value="Incorrect" />
+                <input type="button" class="nextButton" data-inline="true" data-theme="e" value="Correct" />
+            </div>
         </div>
     </div>
 </body>

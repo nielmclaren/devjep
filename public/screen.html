@@ -1,19 +1,52 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
 	<link rel="stylesheet" href="/css/common.css"/> 
-	<link rel="stylesheet" href="/css/screen.css"/> 
+    <style type="text/css">
+        .screen {
+            margin: 80px auto;
+            width: 800px;
+        }
+        #leftCol {
+            float: left;
+        }
+        #bitlyContainer {
+            font-size: 32pt;
+        }
+        #content {
+            margin-left: 480px;
+            text-align: left;
+        }
+        #playerList {
+            font-size: 12pt;
+            max-height: 500px;
+        }
+    </style>
+
 	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
 	<script src="/socket.io/socket.io.js"></script>
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="/js/qrcode.js"></script>
 	<script src="/js/common.js"></script>
 	<script src="/js/screen.js"></script>
 </head>
 
 <body>
-    <div id="joinScreen" class="screen">
-        <p>Waiting for players...</p>
-        <ul id="playerList">
-        </ul>
+    <div class="page" data-role="page">
+        <div class="screens">
+            <div id="joinScreen" class="screen">
+                <div id="leftCol">
+                    <div id="qrContainer"></div>
+                    <div id="bitlyContainer"></div>
+                </div>
+                <div id="content">
+                    <p>Waiting for players...</p>
+                    <ul id="playerList"></ul>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
